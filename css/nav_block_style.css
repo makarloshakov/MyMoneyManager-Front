@@ -254,10 +254,6 @@ div, section ::before, ::after {
     display: inline-block;
 }
 
-.d_tab a {
-
-}
-
 .d_tab {
     list-style-type: none;
     display: block;
