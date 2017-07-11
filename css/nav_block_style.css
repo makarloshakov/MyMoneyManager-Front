@@ -10,7 +10,7 @@ div, section ::before, ::after {
     flex-direction: row;
 }
 
-#content-two, #content-three, #content-fourth {
+#content-two, #content-three, #content-fourth, #dept-content-two {
     display: none;
 }
 
@@ -165,4 +165,122 @@ div, section ::before, ::after {
 
 .modal_window__selection_icon {
     float: right;
+}
+
+.cur_select {
+    margin-bottom: 15px;
+    height: 35px;
+    width: 268px;
+}
+
+.cur_btns {
+    margin-bottom: 15px;
+}
+
+.cur_btns button {
+    padding-left: 23.3px;
+    padding-right: 23.3px;
+}
+
+.cur_btn {
+    float: right;
+    margin-right: 15px;
+}
+
+.dropdown-menu {
+    background-color: #f2f2f2;
+    height: 200px;
+}
+
+.edit_cat__cur_btn {
+    margin-left: 42px;
+}
+
+.change_icon {
+    top: 10%;
+    left: 96%;
+    height: auto;
+}
+
+.dropdown-menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.dropdown-menu-item {
+    margin-bottom: 5px;
+    padding: 7px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: #f2f2f2;
+}
+
+.debt_p p {
+    margin-top: 8px;
+}
+
+#content-fourth > .content__container__item > a {
+    padding: 35px;
+}
+
+.save_new {
+    margin-left: 126px;
+}
+
+.transfer_save {
+    margin-left: 171px;
+}
+
+.save_repay {
+    margin-left: 136px;
+}
+
+.dept-tab {
+    background: #e0e0e0;
+    padding: 10px;
+}
+
+.active-dept-tab {
+    background: #44bcf2;
+    padding: 10px;
+}
+
+.dept-content {
+    display: inline-block;
+}
+
+.d_tab a {
+
+}
+
+.d_tab {
+    list-style-type: none;
+    display: block;
+}
+
+.dept__tabs {
+    display: inline-flex;
+}
+
+.dept__tabs a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+#one-dept-tab {
+    margin-right: 10px;
+}
+
+.change_dept {
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
 }
