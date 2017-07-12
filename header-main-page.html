@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Header main page</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="./css/header-main-page.css">
+    <link rel="stylesheet" href="./css/reset.css">
+
+</head>
+<body>
+<section class="header">
+    <div class="header-wrapper-first">
+        <div class="header-logo">
+            <a href="#">Logo<img src="./img/logo.png"></a>
+            <a href="#"><img src="./img/acc.png"></a>
+        </div>
+    </div>
+    <div class="header-wrapper-second">
+        <div class="header-content">
+            <div class="balance">
+                <h1>32802 Р</h1>
+                <h3>Общий баланс</h3>
+                <h2>1500 Р</h2>
+                <h3>Затраты на сегодня</h3>
+            </div>
+
+            <div class="container goals">
+            <div class="row">
+                <div class="col-xs-5 main block" data-toggle="modal" data-target="#goals-modal-window">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="col-xs-4 main block" data-toggle="modal" data-target="#goals-modal-window">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                    </div>
+                </div>
+                <div class="col-xs-2 block" data-toggle="modal" data-target="#goals-modal-window">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
+                    </div>
+                </div>
+                <div class="col-xs-2 block" data-toggle="modal" data-target="#goals-modal-window">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
+                    </div>
+                </div>
+                <div class="col-xs-2 block" data-toggle="modal" data-target="#goals-modal-window">
+
+                </div>
+
+            </div>
+            </div>
+
+            <div class="purse-flex-container">
+                <div class="flex-purse" data-toggle="modal" data-target="#purse-modal-window">
+                    <p>Кошелёк</p>
+                    <a href="#"><img
+                            src="./img/purse.png"></a>
+                    <p>1000 Р</p>
+                </div>
+                <div class="flex-purse" data-toggle="modal" data-target="#purse-modal-window">
+                    <p>Кошелёк</p>
+                    <a href="#"><img src="./img/purse.png"></a>
+                    <p>1000 Р</p>
+                </div>
+                <div class="flex-purse" data-toggle="modal" data-target="#purse-modal-window">
+                    <p>Кошелёк</p>
+                    <a href="#"><img src="./img/purse.png"></a>
+                    <p>1000 Р</p>
+                </div>
+                <div class="flex-purse" data-toggle="modal" data-target="#purse-modal-window">
+                    <p>Кошелёк</p>
+                    <a href="#"><img src="./img/purse.png"></a>
+                    <p>1000 Р</p>
+                </div>
+                <div class="flex-purse">
+                    <a href="#"><img src="./img/right.png"></a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="modal fade" id="purse-modal-window" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Кошелёк</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="name" class="col-xs-4 control-label">Название:</label>
+                            <div class="col-xs-8">
+                                <input type="email" class="form-control" id="name" placeholder="Введите название">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="sum" class="col-xs-4 control-label">Сумма:</label>
+                            <div class="col-xs-8">
+                                <input type="text" class="form-control" id="sum" placeholder="Введите сумму">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-offset-2 col-xs-10">
+                                <input type="submit" class="btn btn-default" value="Удалить">
+                                <input type="submit" class="btn btn-default" value="Сохранить">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="modal fade" id="goals-modal-window" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputFile">File input</label>
+                            <input type="file" id="exampleInputFile">
+                            <p class="help-block">Example block-level help text here.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Название цели</label>
+                            <input type="email" class="form-control" id="email" placeholder="Машина">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Необходимая сумма</label>
+                            <input type="email" class="form-control" id="email" placeholder="1 800 000 Р">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Собрано</label>
+                            <input type="email" class="form-control" id="email" placeholder="800 000 Р">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+.header-wrapper-first {
+    background-color: rgba(148, 148, 148, 1);
+}
+.header-wrapper-second {
+    background-color: lightgray;
+}
+.header-logo {
+    height: 42px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.header-logo a:first-child {
+    color: lightgray;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 42px;
+}
+.header-logo a:last-child {
+    float: right;
+}
+.header-logo img {
+    float: left;
+    margin-right: 10px;
+    width: 30px;
+    margin-top: 5px;
+}
+
+.header-content {
+    position: relative;
+    background-color: lightgray;
+    height: 200px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    padding-top: 25px;
+}
+.header-content h2 {
+    font-size: 25px;
+}
+.header-content h3 {
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+.header-content .balance {
+    position: absolute;
+    overflow: hidden;
+}
+
+.gallery-flex-container {
+    margin: 25px 0 0 40px;
+    display: flex; /* Флексы */
+    height: 145px; /* Высота */
+    color: #fff; /* Белый цвет текста */
+    font-size: 2.6em; /* Размер шрифта */
+    flex-flow: column wrap; /* Располагаем в виде колонок */
+    width: 450px;
+    float: right;
+}
+.purse-flex-container {
+    display: flex;
+    flex-flow: row;
+    float: right;
+    margin-top: 75px;
+}
+
+.flex-purse {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.flex-purse img {
+    margin: 5px 0;
+}
+.purse-flex-container a:last-child {
+    position: absolute;
+    bottom: 32px;
+}
+.flex-item {
+    display: flex; /* Флексы */
+    align-items: center; /* Выравнивание текста по вертикали */
+    justify-content: center; /* Выравнивание текста по горизонтали */
+    cursor: pointer;
+}
+.one {
+    background: #508694; /* Цвет фона */
+    margin-right: 5px; /* Отступ справа */
+    flex-basis: 100%;
+    margin-bottom:0;
+}
+.two {
+    background: #BB844C; /* Цвет фона */
+    flex-basis: 48%;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 66px;
+}
+.flex-item:nth-child(even) {
+    margin-bottom: 0;
+}
+
+.header-content .purse {
+    float: right;
+}
+
+.header-content .purse a {
+    margin-right: 15px;
+}
+
+.block {
+    background-color: gray;
+    height: 50px;
+    border: solid 2px lightgray;
+    padding: 0;
+    cursor: pointer;
+}
+.row {
+    width: 400px;
+    float: right;
+}
+.main {
+    height: 150px;
+
+}
+.goals {
+    float: right;
+    width: 435px;
+    margin-top: 25px;
+}
+.main .progress{
+    margin-bottom: 0;
+    margin-top: 141px;
+    height: 5px;
+    border-radius: 0;
+}
+.progress {
+    margin-bottom: 0;
+    margin-top: 41px;
+    height: 5px;
+    border-radius: 0;
+}
