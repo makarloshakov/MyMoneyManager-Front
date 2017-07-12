@@ -14,11 +14,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link rel="stylesheet" href="css/nav_block_style.css">
-    <!--&lt;!&ndash;<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>&ndash;&gt;-->
-    <!--&lt;!&ndash;<script type="text/javascript" src="js/moment-with-locales.min.js"></script>&ndash;&gt;-->
-    <!--&lt;!&ndash;<script type="text/javascript" src="js/bootstrap.min.js"></script>&ndash;&gt;-->
-    <!--&lt;!&ndash;<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>&ndash;&gt;-->
+    <!--<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>-->
+    <!--<script type="text/javascript" src="js/moment-with-locales.min.js"></script>-->
+    <!--<script type="text/javascript" src="js/bootstrap.min.js"></script>-->
+    <!--<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>-->
     <!--<link rel="stylesheet" href="css/bootstrap.min.css" />-->
     <!--<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />-->
 </head>
@@ -149,7 +150,6 @@
 
             <div id="content-three" class="content__container">
                 <form class="content__container__form">
-
                     <table>
                         <tr class="form__labels">
                             <td>Откуда</td>
@@ -178,7 +178,6 @@
                             </td>
                         </tr>
                     </table>
-
                     <br>
                     <input type="submit" value="Перевести" class="form__input_submit">
                 </form>
@@ -228,6 +227,40 @@
         </div>
         <script type="text/javascript" rel="script" src="js/tabs.js"></script>
     </section>
+
+    <section class="graphics">
+        <div class="graphics__container">
+            <div class="graph__pie">
+                <section class="slider">
+                    <div id="arrow-left" class="slider-arrow slider-arrow--left">
+                        <img src="img/LeftArrow.png">
+                    </div>
+                    <div id="arrow-right" class="slider-arrow slider-arrow--right">
+                        <img src="img/RightArrow.png">
+                    </div>
+                    <div class="slider-content">
+                        <div class="slider-frame">
+                            <a id="a">Июнь</a><br>
+                        </div>
+                        <div class="slider-frame">
+                            <a>Июль</a>
+                        </div>
+                        <div class="slider-frame">
+                            <a>Август</a>
+                        </div>
+                    </div>
+                </section>
+                <div id="donutchart"></div>
+            </div>
+            <div class="graph__column" id="columnchart_material">
+
+            </div>
+        </div>
+        <script rel="script" type="text/javascript" src="js/slider_graph.js"></script>
+        <script rel="script" type="text/javascript" src="js/graphic_pie.js"></script>
+        <script rel="script" type="text/javascript" src="js/graphic_column.js"></script>
+    </section>
+
     <!-- pop-up окно для изменения категории -->
     <div class="container">
         <div class="modal fade" id="edit-category__modal-window" role="dialog">
@@ -304,22 +337,28 @@
 
                             </div>
                             <div class="btn-group col-xs-14 cur_btns">
-                                <button type="button" class="btn btn-default">Сегодня</button>
-                                <button type="button" class="btn btn-default">Вчера</button>
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Другое <span class="caret"></span></button>
+                                <button type="button" class="btn btn-default cur_btn_radio">Сегодня</button>
+                                <button type="button" class="btn btn-default cur_btn_radio">Вчера</button>
+                                <label>
+                                    <input type="date" class="calendar">
+                                </label>
+                                <!--<button type="button" class="btn btn-default dropdown-toggle calendar" data-toggle="dropdown">Другое <span class="caret"></span></button>-->
                                 <!-- СРОЧНО ДОПИЛИТЬ КАЛЕНДАРЬ -->
-                                <ul class="dropdown-menu" role="menu">
+                                <!--<ul class="dropdown-menu" role="menu">-->
                                     <!--<div class="form-group">-->
-                                        <div class="input-group date" id="datetimepicker4">
-                                            <!--<input type="text" class="form-control" />-->
-                                            <span class="input-group-addon">
-                                                <span class="glyphicon-calendar"></span>
-                                            </span>
-                                        </div>
+                                        <!--<div class="input-group date" id="datetimepicker4">-->
+                                            <!--&lt;!&ndash;<input type="text" class="form-control" />&ndash;&gt;-->
+                                            <!--<span class="input-group-addon">-->
+                                                <!--<span class="glyphicon-calendar"></span>-->
+                                            <!--</span>-->
+                                        <!--</div>-->
                                     <!--</div>-->
-                                </ul>
+                                <!--</ul>-->
                             </div>
-                            <br>
+                            <div class="form-group">
+                                <label for="comment_category">Комментарий</label>
+                                <input type="text" class="form-control" id="comment_category">
+                            </div>
                             <div class="form-group">
                                 <div class="col-xs-offset-2 transfer_save">
                                     <input type="submit" class="btn btn-default" value="Сохранить">
@@ -451,20 +490,26 @@
                             <div class="btn-group col-xs-14 cur_btns">
                                 <button type="button" class="btn btn-default">Сегодня</button>
                                 <button type="button" class="btn btn-default">Вчера</button>
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Другое <span class="caret"></span></button>
-                                <!-- СРОЧНО ДОПИЛИТЬ КАЛЕНДАРЬ -->
-                                <ul class="dropdown-menu" role="menu">
-                                    <!--<div class="form-group">-->
-                                    <div class="input-group date" id="datetimepicker2">
-                                        <!--<input type="text" class="form-control" />-->
-                                        <span class="input-group-addon">
-                                                <span class="glyphicon-calendar"></span>
-                                            </span>
-                                    </div>
+                                <label>
+                                    <input type="date" class="calendar">
+                                </label>
+                                <!--<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Другое <span class="caret"></span></button>-->
+                                <!--&lt;!&ndash; СРОЧНО ДОПИЛИТЬ КАЛЕНДАРЬ &ndash;&gt;-->
+                                <!--<ul class="dropdown-menu" role="menu">-->
+                                    <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+                                    <!--<div class="input-group date" id="datetimepicker2">-->
+                                        <!--&lt;!&ndash;<input type="text" class="form-control" />&ndash;&gt;-->
+                                        <!--<span class="input-group-addon">-->
+                                                <!--<span class="glyphicon-calendar"></span>-->
+                                            <!--</span>-->
                                     <!--</div>-->
-                                </ul>
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                <!--</ul>-->
                             </div>
-                            <br>
+                            <div class="form-group">
+                                <label for="comment_income">Комментарий</label>
+                                <input type="text" class="form-control" id="comment_income">
+                            </div>
                             <div class="form-group">
                                 <div class="col-xs-offset-2 transfer_save">
                                     <input type="submit" class="btn btn-default" value="Сохранить">

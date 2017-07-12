@@ -5,7 +5,7 @@ div, section ::before, ::after {
 .nav_block {
     max-width: 1100px;
     min-width: 650px;
-    margin: 30px auto;
+    margin: 30px auto 0;
     justify-content: space-between;
     flex-direction: row;
 }
@@ -65,6 +65,7 @@ div, section ::before, ::after {
     padding: 5px;
     float: right;
     border-radius: 2px;
+    margin-bottom: 10px;
 }
 
 .content__container {
@@ -132,6 +133,12 @@ div, section ::before, ::after {
     color: #ffffff;
     border-color: transparent;
     float: right;
+    transition: .3s;
+}
+
+.form__input_submit:hover {
+    transition: .3s;
+    transform: scale(.9);
 }
 
 .form__labels {
@@ -178,13 +185,26 @@ div, section ::before, ::after {
 }
 
 .cur_btns button {
-    padding-left: 23.3px;
-    padding-right: 23.3px;
+    /*padding-left: 23.3px;*/
+    /*padding-right: 23.3px;*/
+    outline: 0 !important;
 }
 
 .cur_btn {
     float: right;
     margin-right: 15px;
+}
+
+
+.calendar {
+    width: 122px;
+    height: 34px;
+    margin-left: -1px;
+    border: 1px solid #ccc;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    outline: 0 !important;
+    font-weight: 400;
 }
 
 .dropdown-menu {
@@ -280,3 +300,85 @@ div, section ::before, ::after {
 .dropdown-toggle {
     cursor: pointer;
 }
+
+.graphics {
+    max-width: 1100px;
+    min-width: 650px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.graph__pie {
+    /*background: #e0e0e0;*/
+    width: 50%;
+    height: 300px;
+    margin-right: 10px;
+}
+
+.graph__column {
+    background: #e0e0e0;
+    width: 50%;
+    height: 300px;
+    display: flex;
+}
+
+.graphics__container {
+    display: flex;
+    float: right;
+    width: 73%;
+    height: 300px;
+}
+
+/******************/
+
+.slider-content{
+    top: 15%;
+    left: 49%;
+    color: black;
+}
+
+.slider-content a {
+    margin: 0 auto;
+    padding: 7px;
+    color: black;
+    text-decoration: none;
+}
+
+.slider-frame {
+    display: none;
+}
+.slider-frame--active {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-arrow {
+    width: 16px;
+    height: 25px;
+    cursor: pointer;
+}
+.slider-arrow--left {
+    position: absolute;
+    display: inline-flex;
+    top: 5px;
+    left: 10%;
+}
+.slider-arrow--right {
+    position: absolute;
+    display: inline-flex;
+    top: 5px;
+    right: 10%;
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#donutchart {
+}
+
+/******************/
