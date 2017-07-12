@@ -1,0 +1,282 @@
+div, section ::before, ::after {
+    box-sizing: border-box;
+}
+
+.nav_block {
+    max-width: 1100px;
+    min-width: 650px;
+    margin: 30px auto;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#content-two, #content-three, #content-fourth, #dept-content-two {
+    display: none;
+}
+
+.menu {
+    display: inline-block;
+    align-content: space-between;
+    width: 26%;
+}
+
+.tab {
+    background: #eee;
+    height: 52px;
+    display: block;
+    line-height: 30px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.menu__tabs p {
+    width: 70px;
+    margin-left: 15px;
+    margin-top: -40px;
+    font-size: 12px;
+}
+
+.active-tab + p {
+    margin-top: -30px;
+}
+
+.menu__tabs li a {
+    text-decoration: none;
+    display: block;
+    color: #666;
+    font-weight: bolder;
+    font-size: 17px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.active-tab {
+    background: #919191;
+    height: 52px;
+    border-bottom: 0 none;
+    border-radius: 2px;
+}
+
+.content {
+    display: inline-block;
+    width: 73%;
+    min-height: 238px;
+    background: #eee;
+    padding: 5px;
+    float: right;
+    border-radius: 2px;
+}
+
+.content__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 5;
+}
+
+.content__container__item {
+    position: relative;
+    margin: 5px;
+    width: 122px;
+    height: 104px;
+    background: #ffffff;
+    border-radius: 2px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.content__container__item a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.item__image {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.item__plus {
+    margin-top: 28%;
+}
+
+.content__container__form {
+    width: auto;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+.form__hr {
+    color: #333333;
+    font-weight: bolder;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.content__container__form__select {
+    width: 239px;
+    height: 35px;
+}
+
+.form__input_text {
+    width: 184px;
+    height: 35px;
+}
+
+.form__input_submit {
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    background: #3e3e3e;
+    color: #ffffff;
+    border-color: transparent;
+    float: right;
+}
+
+.form__labels {
+    color: #747474;
+}
+
+.sum {
+    float: right;
+    margin-right: -20px;
+}
+
+.edit_item {
+    background: #444444;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: -8px;
+    left: 105px;
+    display: none;
+}
+
+.edit_item a {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.content__container__item:hover .edit_item {
+    display: block;
+}
+
+.modal_window__selection_icon {
+    float: right;
+}
+
+.cur_select {
+    margin-bottom: 15px;
+    height: 35px;
+    width: 268px;
+}
+
+.cur_btns {
+    margin-bottom: 15px;
+}
+
+.cur_btns button {
+    padding-left: 23.3px;
+    padding-right: 23.3px;
+}
+
+.cur_btn {
+    float: right;
+    margin-right: 15px;
+}
+
+.dropdown-menu {
+    background-color: #f2f2f2;
+    height: 200px;
+}
+
+.edit_cat__cur_btn {
+    margin-left: 42px;
+}
+
+.change_icon {
+    top: 10%;
+    left: 96%;
+    height: auto;
+}
+
+.dropdown-menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.dropdown-menu-item {
+    margin-bottom: 5px;
+    padding: 7px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: #f2f2f2;
+}
+
+.debt_p p {
+    margin-top: 8px;
+}
+
+#content-fourth > .content__container__item > a {
+    padding: 35px;
+}
+
+.save_new {
+    margin-left: 126px;
+}
+
+.transfer_save {
+    margin-left: 171px;
+}
+
+.save_repay {
+    margin-left: 136px;
+}
+
+.dept-tab {
+    background: #e0e0e0;
+    padding: 10px;
+}
+
+.active-dept-tab {
+    background: #44bcf2;
+    padding: 10px;
+}
+
+.dept-content {
+    display: inline-block;
+}
+
+.d_tab {
+    list-style-type: none;
+    display: block;
+}
+
+.dept__tabs {
+    display: inline-flex;
+}
+
+.dept__tabs a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+#one-dept-tab {
+    margin-right: 10px;
+}
+
+.change_dept {
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
