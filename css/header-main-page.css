@@ -1,54 +1,97 @@
 .header-wrapper-first {
-    background-color: rgba(148, 148, 148, 1);
+    background-color: #ffffff;
+    height: 60px;
 }
+
 .header-wrapper-second {
-    background-color: lightgray;
+    background-image: url(../img/header.png);
 }
+
 .header-logo {
-    height: 42px;
-    max-width: 1100px;
+    height: 60px;
     margin: 0 auto;
 }
-.header-logo a:first-child {
-    color: lightgray;
-    text-decoration: none;
+
+.header-logo a {
+    font-family: Roboto, sans-serif;
     font-size: 16px;
-    margin-top: 10px;
-    line-height: 42px;
+    font-weight: bold;
+    text-align: left;
+    color: #ee364f;
+    text-decoration: none;
+    line-height: 60px;
 }
+
+.header-logo a:last-child {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: #333333;
+    margin-right: 9%;
+}
+
 .header-logo a:last-child {
     float: right;
 }
+
+.header-logo a:last-child img {
+    float: right;
+    margin-right: 0;
+    margin-left: 20px;
+}
+
 .header-logo img {
     float: left;
     margin-right: 10px;
+    margin-left: 9%;
     width: 30px;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .header-content {
     position: relative;
-    background-color: lightgray;
-    height: 200px;
-    max-width: 1100px;
+    height: 320px;
     margin: 0 auto;
 }
 
 .header-content h1 {
+    font-family: Roboto, sans-serif;
     font-size: 48px;
-    padding-top: 25px;
-}
-.header-content h2 {
-    font-size: 25px;
-}
-.header-content h3 {
-    font-size: 18px;
-    padding-bottom: 30px;
+    font-weight: bold;
+    text-align: left;
+    float: left;
+    color: #333333;
 }
 
-.header-content .balance {
+.header-content h2 {
+    font-family: Roboto, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    color: #333333;
+}
+
+.header-content h3 {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #333333;
+}
+
+.header-numbers {
+    margin-top: 90px;
+    margin-left: 9%;
     position: absolute;
-    overflow: hidden;
+    width: 42%;
+}
+
+.header-numbers .balance {
+    margin-right: 18%;
+    float: left;
+}
+
+.header-numbers .costs {
+    margin-top: 8px;
 }
 
 .gallery-flex-container {
@@ -61,86 +104,121 @@
     width: 450px;
     float: right;
 }
-.purse-flex-container {
+
+.wallet-flex-container {
     display: flex;
     flex-flow: row;
-    float: right;
-    margin-top: 75px;
+    float: left;
+    bottom: 36px;
+    position: absolute;
+    margin-left: 9%;
+    width: 42%;
 }
 
-.flex-purse {
+.flex-wallet {
+    width: 37%;
+    height: 90px;
+    border: solid 2px #eeeeee;
+    background-color: #ffffff;
+    border-radius: 2px;
     position: relative;
     text-align: center;
     cursor: pointer;
+    margin-right: 2%;
+}
+
+.flex-wallet:last-child {
+    margin-right: 0;
+}
+
+.flex-wallet img {
+    float: left;
+    margin-top: 30px;
     margin-right: 15px;
+    margin-left: 20px;
 }
-.flex-purse img {
-    margin: 5px 0;
+
+.flex-wallet p {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    color: #333333;
+    margin-top: 30px;
 }
-.purse-flex-container a:last-child {
+
+.flex-wallet p:last-child {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    color: #333333;
+    margin-top: 0;
+}
+
+.wallet-flex-container a:last-child {
     position: absolute;
     bottom: 32px;
 }
-.flex-item {
-    display: flex; /* Флексы */
-    align-items: center; /* Выравнивание текста по вертикали */
-    justify-content: center; /* Выравнивание текста по горизонтали */
-    cursor: pointer;
-}
-.one {
-    background: #508694; /* Цвет фона */
-    margin-right: 5px; /* Отступ справа */
-    flex-basis: 100%;
-    margin-bottom:0;
-}
-.two {
-    background: #BB844C; /* Цвет фона */
-    flex-basis: 48%;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    width: 66px;
-}
-.flex-item:nth-child(even) {
-    margin-bottom: 0;
-}
 
-.header-content .purse {
+.header-content .wallet {
     float: right;
 }
 
-.header-content .purse a {
+.header-content .wallet a {
     margin-right: 15px;
 }
 
-.block {
-    background-color: gray;
-    height: 50px;
-    border: solid 2px lightgray;
-    padding: 0;
+.goals-container {
+    width: 46%;
+    overflow: hidden;
+    height: 320px;
+    padding-right: 0;
+    float: right;
+}
+
+.goals-picture {
+    width: 100%;
+    height: 320px;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.goals-item {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 635px;
+    height: 324px;
+    -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.bg {
+    opacity: 1;
+    z-index: 2;
+    position: absolute;
+    display: table;
+    width: 100%;
+    height: 320px;
+    background-color: rgba(22, 41, 53, 0.32);;
     cursor: pointer;
 }
-.row {
-    width: 400px;
-    float: right;
-}
-.main {
-    height: 150px;
 
+.bg > span {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
 }
-.goals {
-    float: right;
-    width: 435px;
-    margin-top: 25px;
-}
-.main .progress{
-    margin-bottom: 0;
-    margin-top: 141px;
-    height: 5px;
-    border-radius: 0;
-}
-.progress {
-    margin-bottom: 0;
-    margin-top: 41px;
-    height: 5px;
-    border-radius: 0;
+
+@media screen and (min-width: 1400px) {
+    .goals-item {
+        float: right;
+    }
+
 }
