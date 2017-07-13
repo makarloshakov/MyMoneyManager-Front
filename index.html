@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Navigation Block</title>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
           integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
@@ -16,12 +17,6 @@
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link rel="stylesheet" href="css/nav_block_style.css">
-    <!--<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>-->
-    <!--<script type="text/javascript" src="js/moment-with-locales.min.js"></script>-->
-    <!--<script type="text/javascript" src="js/bootstrap.min.js"></script>-->
-    <!--<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>-->
-    <!--<link rel="stylesheet" href="css/bootstrap.min.css" />-->
-    <!--<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />-->
 </head>
 <body>
     <section class="nav_block">
@@ -333,27 +328,20 @@
                                     <option>Сбербанк</option>
                                 </select>
                             </div>
-                            <div class="form-group">
-
-                            </div>
-                            <div class="btn-group col-xs-14 cur_btns">
-                                <button type="button" class="btn btn-default cur_btn_radio">Сегодня</button>
-                                <button type="button" class="btn btn-default cur_btn_radio">Вчера</button>
-                                <label>
-                                    <input type="date" class="calendar">
-                                </label>
-                                <!--<button type="button" class="btn btn-default dropdown-toggle calendar" data-toggle="dropdown">Другое <span class="caret"></span></button>-->
-                                <!-- СРОЧНО ДОПИЛИТЬ КАЛЕНДАРЬ -->
-                                <!--<ul class="dropdown-menu" role="menu">-->
-                                    <!--<div class="form-group">-->
-                                        <!--<div class="input-group date" id="datetimepicker4">-->
-                                            <!--&lt;!&ndash;<input type="text" class="form-control" />&ndash;&gt;-->
-                                            <!--<span class="input-group-addon">-->
-                                                <!--<span class="glyphicon-calendar"></span>-->
-                                            <!--</span>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</ul>-->
+                            <div class="btn-group col-xs-14 cur_btns radios-as-buttons">
+                                <div>
+                                    <input type="radio" name="option" id="today_cat" class="radio_btn" checked/>
+                                    <label for="today_cat" id="today_label_cat">Сегодня</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="option" id="yesterday_cat" class="radio_btn" />
+                                    <label for="yesterday_cat" id="yesterday_label_cat">Вчера</label>
+                                </div>
+                                <div id="other_cont_cat">
+                                    <input type="radio" name="option" id="other_cat" onfocus=" this.select();lacs(this)"
+                                           onclick="event.cancelBubble = true; this.select(); lacs(this)"/>
+                                    <label for="other_cat" class="radio_btn" id="calendar-dropdown_cat">Другое</label>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="comment_category">Комментарий</label>
@@ -364,13 +352,6 @@
                                     <input type="submit" class="btn btn-default" value="Сохранить">
                                 </div>
                             </div>
-                            <script type="text/javascript">
-                                $(function () {
-                                    $('#datetimepicker4').datetimepicker(
-                                            {pickTime: false, language: 'ru'}
-                                    );
-                                });
-                            </script>
                         </form>
                     </div>
                 </div>
@@ -487,24 +468,21 @@
                                 <label for="income-balance-sum">Сумма</label>
                                 <input type="text" class="form-control" id="income-balance-sum">
                             </div>
-                            <div class="btn-group col-xs-14 cur_btns">
-                                <button type="button" class="btn btn-default">Сегодня</button>
-                                <button type="button" class="btn btn-default">Вчера</button>
-                                <label>
-                                    <input type="date" class="calendar">
-                                </label>
-                                <!--<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Другое <span class="caret"></span></button>-->
-                                <!--&lt;!&ndash; СРОЧНО ДОПИЛИТЬ КАЛЕНДАРЬ &ndash;&gt;-->
-                                <!--<ul class="dropdown-menu" role="menu">-->
-                                    <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
-                                    <!--<div class="input-group date" id="datetimepicker2">-->
-                                        <!--&lt;!&ndash;<input type="text" class="form-control" />&ndash;&gt;-->
-                                        <!--<span class="input-group-addon">-->
-                                                <!--<span class="glyphicon-calendar"></span>-->
-                                            <!--</span>-->
-                                    <!--</div>-->
-                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                                <!--</ul>-->
+                            <div class="btn-group col-xs-14 cur_btns radios-as-buttons">
+                                <div>
+                                    <input type="radio" name="option" id="today" class="radio_btn" checked/>
+                                    <label for="today" id="today_label">Сегодня</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="option" id="yesterday" class="radio_btn" />
+                                    <label for="yesterday" id="yesterday_label">Вчера</label>
+                                </div>
+                                <div id="other_cont">
+                                    <input type="radio" name="option" id="other" onfocus=" this.select();lcs(this)"
+                                    onclick="event.cancelBubble = true; this.select(); lcs(this)"/>
+                                    <label for="other" class="radio_btn" id="calendar-dropdown">Другое</label>
+                                </div>
+                                <script src="js/calendar.js" type="text/javascript"></script>
                             </div>
                             <div class="form-group">
                                 <label for="comment_income">Комментарий</label>
@@ -515,13 +493,6 @@
                                     <input type="submit" class="btn btn-default" value="Сохранить">
                                 </div>
                             </div>
-                            <script type="text/javascript">
-                                $(function () {
-                                    $('#datetimepicker2').datetimepicker(
-                                            {pickTime: false, language: 'ru'}
-                                    );
-                                });
-                            </script>
                         </form>
                     </div>
                 </div>
