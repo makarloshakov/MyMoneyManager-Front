@@ -3,6 +3,26 @@
 <head>
     <meta charset="utf-8">
     <title>Navigation Block</title>
+
+    <!--<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/j.."></script>-->
+    <!--<script src="http://code.jquery.com/jquery-1.11.1.js"></script>-->
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/b.."-->
+          <!--integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/b.."-->
+          <!--integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">-->
+
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bo.."-->
+            <!--integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"-->
+            <!--crossorigin="anonymous"></script>-->
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/b..">-->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bo.."></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
     <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
           integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -22,21 +42,19 @@
     <section class="nav_block">
         <div class="menu">
             <ul class="menu__tabs">
-                <li class="tab">
-                    <a href="#content-one" id="one-tab" class="active-tab">Расходы</a>
-                    <p>Июль 2017</p>
+                <li class="active-tab" id="one-tab">
+                    <a href="#content-one" class="simple-tab">РАСХОДЫ</a>
                     <p class="sum">-2183 &#8381</p>
                 </li>
-                <li class="tab">
-                    <a href="#content-two" id="two-tab" class="tab">Доходы</a>
-                    <p>Июль 2017</p>
+                <li class="tab" id="two-tab">
+                    <a href="#content-two" class="simple-tab">ДОХОДЫ</a>
                     <p class="sum">25000 &#8381</p>
                 </li>
-                <li class="tab">
-                    <a href="#content-three" id="three-tab" class="tab">Переводы</a>
+                <li class="tab" id="three-tab">
+                    <a href="#content-three" class="simple-tab">ПЕРЕВОДЫ</a>
                 </li>
-                <li class="tab">
-                    <a href="#content-fourth" id="fourth-tab" class="tab">Долги</a>
+                <li class="tab" id="fourth-tab">
+                    <a href="#content-fourth" class="simple-tab">ДОЛГИ</a>
                 </li>
             </ul>
         </div>
@@ -223,38 +241,38 @@
         <script type="text/javascript" rel="script" src="js/tabs.js"></script>
     </section>
 
-    <section class="graphics">
-        <div class="graphics__container">
-            <div class="graph__pie">
-                <section class="slider">
-                    <div id="arrow-left" class="slider-arrow slider-arrow--left">
-                        <img src="img/LeftArrow.png">
-                    </div>
-                    <div id="arrow-right" class="slider-arrow slider-arrow--right">
-                        <img src="img/RightArrow.png">
-                    </div>
-                    <div class="slider-content">
-                        <div class="slider-frame">
-                            <a id="a">Июнь</a><br>
-                        </div>
-                        <div class="slider-frame">
-                            <a>Июль</a>
-                        </div>
-                        <div class="slider-frame">
-                            <a>Август</a>
-                        </div>
-                    </div>
-                </section>
-                <div id="donutchart"></div>
-            </div>
-            <div class="graph__column" id="columnchart_material">
+    <!--<section class="graphics">-->
+        <!--<div class="graphics__container">-->
+            <!--<div class="graph__pie">-->
+                <!--<section class="slider">-->
+                    <!--<div id="arrow-left" class="slider-arrow slider-arrow&#45;&#45;left">-->
+                        <!--<img src="img/LeftArrow.png">-->
+                    <!--</div>-->
+                    <!--<div id="arrow-right" class="slider-arrow slider-arrow&#45;&#45;right">-->
+                        <!--<img src="img/RightArrow.png">-->
+                    <!--</div>-->
+                    <!--<div class="slider-content">-->
+                        <!--<div class="slider-frame">-->
+                            <!--<a id="a">Июнь</a><br>-->
+                        <!--</div>-->
+                        <!--<div class="slider-frame">-->
+                            <!--<a>Июль</a>-->
+                        <!--</div>-->
+                        <!--<div class="slider-frame">-->
+                            <!--<a>Август</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</section>-->
+                <!--<div id="donutchart"></div>-->
+            <!--</div>-->
+            <!--<div class="graph__column" id="columnchart_material">-->
 
-            </div>
-        </div>
-        <script rel="script" type="text/javascript" src="js/slider_graph.js"></script>
-        <script rel="script" type="text/javascript" src="js/graphic_pie.js"></script>
-        <script rel="script" type="text/javascript" src="js/graphic_column.js"></script>
-    </section>
+            <!--</div>-->
+        <!--</div>-->
+        <!--<script rel="script" type="text/javascript" src="js/slider_graph.js"></script>-->
+        <!--<script rel="script" type="text/javascript" src="js/graphic_pie.js"></script>-->
+        <!--<script rel="script" type="text/javascript" src="js/graphic_column.js"></script>-->
+    <!--</section>-->
 
     <!-- pop-up окно для изменения категории -->
     <div class="container">
