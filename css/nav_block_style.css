@@ -1,5 +1,13 @@
+body {
+    background-color: #f3f6f7;
+}
+
 div, section ::before, ::after {
     box-sizing: border-box;
+}
+
+li {
+    list-style: none;
 }
 
 .nav_block {
@@ -21,48 +29,68 @@ div, section ::before, ::after {
 }
 
 .tab {
-    background: #eee;
-    height: 52px;
-    display: block;
     line-height: 30px;
     margin-bottom: 10px;
+    border-radius: 2px;
+    height: 60px;
+    width: 93%;
+    background: #fff;
+    color: #666;
+}
+
+.simple-tab {
+    width: 90%;
+    height: 60px;
+}
+
+.active-tab {
+    background: #ff003a;
+    margin-bottom: 10px;
+    color: #ffffff;
+    padding-right: 20px;
+    height: 60px;
+    width: 100%;
+    border-bottom: 0 none;
     border-radius: 2px;
 }
 
 .menu__tabs p {
+    float: right;
     width: 70px;
-    margin-left: 15px;
-    margin-top: -40px;
-    font-size: 12px;
+    margin-top: -41px;
+    font-size: 15px;
 }
 
-.active-tab + p {
-    margin-top: -30px;
+.active-tab a {
+    color: #ffffff;
+    padding-top: 9%;
+}
+
+.tab a {
+    color: #666;
+    padding-top: 6%;
+}
+
+.tab p {
+    float: right;
+    width: 70px;
+    margin-top: -45px;
+    margin-right: 8px;
 }
 
 .menu__tabs li a {
     text-decoration: none;
     display: block;
-    color: #666;
-    font-weight: bolder;
-    font-size: 17px;
+    font-weight: 500;
+    font-size: 15px;
     text-align: left;
     padding-left: 15px;
-}
-
-.active-tab {
-    background: #919191;
-    height: 52px;
-    border-bottom: 0 none;
-    border-radius: 2px;
 }
 
 .content {
     display: inline-block;
     width: 73%;
     min-height: 238px;
-    background: #eee;
-    padding: 5px;
     float: right;
     border-radius: 2px;
     margin-bottom: 10px;
@@ -73,39 +101,50 @@ div, section ::before, ::after {
     flex-wrap: wrap;
     width: 100%;
     z-index: 5;
+    margin-top: -5px;
 }
 
 .content__container__item {
     position: relative;
     margin: 5px;
-    width: 122px;
-    height: 104px;
+    padding: 10px;
+    width: 130px;
+    height: 130px;
     background: #ffffff;
     border-radius: 2px;
-    padding: 5px;
     text-align: center;
     cursor: pointer;
 }
 
 .content__container__item a {
     text-decoration: none;
-    color: #000;
-    font-weight: bold;
+    color: #666;
+}
+
+.content__container__item p {
+    color: #666;
 }
 
 .item__image {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 17px;
 }
 
 .item__plus {
-    margin-top: 28%;
+    margin-top: 35%;
+    color: #666;
 }
 
 .content__container__form {
     width: auto;
     margin: 0 auto;
     padding-top: 70px;
+}
+
+#content-three {
+    background-color: #ffffff;
+    margin-top: 0;
+    margin-left: 5px;
+    height: 270px;
 }
 
 .form__hr {
@@ -244,11 +283,11 @@ div, section ::before, ::after {
 }
 
 .debt_p p {
-    margin-top: 8px;
+    margin-top: 11px;
 }
 
 #content-fourth > .content__container__item > a {
-    padding: 35px;
+    margin-top: 5px;
 }
 
 .save_new {
