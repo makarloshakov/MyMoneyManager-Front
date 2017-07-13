@@ -351,10 +351,6 @@ li {
     flex-direction: row;
 }
 
-#donutchart {
-    background-color: #0000AA;
-}
-
 .graph__pie {
     /*background: #e0e0e0;*/
     width: 50%;
